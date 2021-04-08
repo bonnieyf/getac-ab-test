@@ -8,13 +8,6 @@
     var(--main-color),
     var(--secondary-color)
   );
-  --main-color2: #ff2466;
-  --secondary-color2: #861d37;
-  --gradient2: linear-gradient(
-    135deg,
-    var(--main-color2),
-    var(--secondary-color2)
-  );
 }
 
 * {
@@ -85,17 +78,8 @@ button {
   transition: transform 80ms ease-out;
 }
 
-button.red {
-  border: 1px solid var(--main-color2);
-  background: var(--main-color2);
-}
-
 button:hover {
   background: var(--secondary-color);
-}
-
-button.red:hover {
-  background: var(--secondary-color2);
 }
 
 button:active {
@@ -114,10 +98,6 @@ button.ghost {
 button.ghost:hover {
   background: #fff;
   color: var(--secondary-color);
-}
-
-button.ghost.red:hover {
-  color: var(--secondary-color2);
 }
 
 form {
@@ -223,11 +203,6 @@ input {
   height: 200%;
   transform: translateY(0);
   transition: transform 0.6s ease-in-out;
-}
-
-.overlay.red {
-  background: var(--secondary-color2);
-  background: var(--gradient2);
 }
 
 .container.right-panel-active .overlay {
